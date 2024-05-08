@@ -1,0 +1,462 @@
+body {
+    background-color: #330780;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", sans-serif;
+}
+
+header {
+    background-color: #0b021b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5rem;
+    box-shadow: 3px 3px 3px rgba(1, 0, 0, 0.5);
+    width: 100%;
+}
+
+.img {
+    display: flex;
+    width: 15%;
+    justify-content: left;
+    margin-left: 50px;
+}
+
+.reglog {
+    display: flex;
+    width: 30%;
+    height: 5%;
+    justify-content: center;
+}
+
+.info {
+    display: flex;
+    width: 15%;
+}
+
+.logo {
+    height: 2.7rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.search-container {
+    background-color: #0b021b;
+    padding: 6px;
+    transition: border 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.search-container input[type="search"] {
+    background-color: #0b021b;
+    padding: 9px;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #2d3748;
+    transition: border 0.5s ease;
+}
+
+.search-container:focus-within {
+    border-color: #3d91ff;
+}
+
+.search-container input[type="search"]:focus {
+    border-color: #3d91ff;
+    outline: none;
+}
+
+.log-button {
+    display: inline-block;
+    background-color: #0b021b;
+    color: #fff;
+    border: 0px solid #714acd;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.log-button:hover {
+    background-color: #714acd;
+}
+
+.log-button:active {
+    background-color: #714acd;
+    color: #0b021b;
+}
+
+.eventEdit {
+    margin: 20px 20px 0 0;
+}
+
+.event-button {
+    display: inline-block;
+    background-color: #0b021b;
+    color: #fff;
+    border: 0px solid #714acd;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.event-button:hover {
+    background-color: #714acd;
+}
+
+.event-button:active {
+    background-color: #714acd;
+    color: #0b021b;
+}
+
+.reg-button {
+    display: inline-block;
+    background-color: #5c3ca6;
+    color: #fff;
+    border: 0px solid #714acd;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 20px;
+}
+
+.reg-button:hover {
+    background-color: #9568fc;
+    border: 1px solid #baa2f3;
+}
+
+.reg-button:active {
+    background-color: #714acd;
+    color: #0b021b;
+}
+
+.separator {
+    width: 10px;
+}
+
+.home-button {
+    background-color: #0b021b;
+    color: #fff;
+    border: 0px solid #714acd;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #714acd;
+}
+
+.home-button:active {
+    background-color: #714acd;
+    color: #0b021b;
+}
+
+.about-button {
+    background-color: #0b021b;
+    color: #fff;
+    border: 0px solid #714acd;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.about-button:hover {
+    background-color: #714acd;
+}
+
+.about-button:active {
+    background-color: #714acd;
+    color: #0b021b;
+}
+
+main {
+    width: 100%;
+    display: flex;
+}
+
+.ad1 {
+    background: #6a6f8c;
+    display: flex;
+    width: 10%;
+    height: 30rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    /* Cambia la dirección a columna */
+    align-items: center;
+}
+
+h1.title-body {
+    color: #edf0f6;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ad2 {
+    background: #6a6f8c;
+    display: flex;
+    width: 10%;
+    height: 30rem;
+}
+
+.swiper-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper-slide {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+    background-color: grey;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 30px;
+    height: 30px;
+    background-color: #714acd;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    /* Añade un índice z para superponer los botones sobre las imágenes */
+    margin-top: -15px;
+    /* Nueva línea para ajustar el margen superior */
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+}
+
+.search-container-main {
+    background-color: #0b021b;
+    padding: 6px;
+    transition: border 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Cambiado a 'space-between' */
+    width: 40%;
+    margin-top: 50px;
+}
+
+.search-container-main input[type="search"] {
+    background-color: #0b021b;
+    padding: 9px;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #2d3748;
+    transition: border 0.5s ease;
+}
+
+.search-container-main:focus-within {
+    border-color: #3d91ff;
+}
+
+.search-container-main input[type="search"]:focus {
+    border-color: #3d91ff;
+    outline: none;
+}
+
+
+.right-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 30%;
+    margin-top: 20px;
+}
+
+.account-button,
+.tournaments-button,
+.ranking-button {
+    margin-bottom: 10px;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
+    margin-top: 20px;
+}
+
+.advanced-search-button {
+    margin-bottom: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.games-dropdown {
+    background-color: #0b021b;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.status-list {
+    margin-top: 20px;
+}
+
+.status-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.status-list li {
+    margin-bottom: 5px;
+}
+
+.tournament-container {
+    width: 500px;
+    height: 200px;
+    background-color: #ffffff;
+    /* Color de fondo del contenedor */
+    margin-top: 20px;
+    /* Agrega margen superior */
+    padding: 10px;
+    /* Agrega relleno interno */
+}
+
+.tournament-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-logo {
+    margin-left: auto;
+    /* Esto alineará el logo del juego hacia la derecha */
+}
+
+.event-details {
+    flex: 1;
+    padding-left: 10px;
+}
+
+
+.event-date,
+.event-time,
+.game-name,
+.tournament-name,
+.tournament-description {
+    margin: 5px 0;
+}
+
+.left-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
+    margin-top: 20px;
+}
+
+.left-buttons button {
+    margin-bottom: 10px;
+}
+
+.right-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 30%;
+    margin-top: 20px;
+}
+
+.right-buttons button {
+    margin-bottom: 10px;
+}
+
+/* Media query para pantallas más pequeñas */
+@media only screen and (max-width: 768px) {
+
+    /* Ajusta estilos para pantallas más pequeñas aquí */
+    .img {
+        margin-left: 20px;
+    }
+
+    .reglog,
+    .info {
+        width: 50%;
+    }
+
+    .search-container {
+        width: 70%;
+    }
+
+    .content-container {
+        width: 90%;
+    }
+
+    .left-buttons,
+    .right-buttons {
+        width: 40%;
+    }
+
+    .tournament-container {
+        max-width: 100%;
+    }
+}
